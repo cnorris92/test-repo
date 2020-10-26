@@ -12,7 +12,8 @@ library(tidyverse)
 
 ```{r}
 ggplot(data = mpg, aes(x=class, y=cty))+
-  geom_jitter(aes(color=class, alpha= 3))+
-  labs(x= "Car Class", y="City Gas Mileage")
+  geom_jitter(aes(color=class, alpha= 3, legend=FALSE))+
+  labs(x= "Car Class", y="City Gas Mileage",
+       title= "Car City Gas Mileage by Class")
 ```
 
